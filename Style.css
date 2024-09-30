@@ -1,0 +1,277 @@
+/* Estilos del formulario */
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.Logo {
+    max-width: 8%;
+    height: auto;
+    margin-right: 50px;
+}
+
+.a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.a:link {
+    text-decoration: none;
+    color: #ffffff; 
+}
+
+.a:hover {
+    text-decoration: none;
+    color: #ffffff; 
+}
+
+
+/*Header*/
+.contenedor 
+{
+    width: 100%;
+    margin: auto;
+}
+.contenedor-flex 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-principal {
+    width: 100%;
+    background: #C08081;
+}
+
+.logo {
+    font-size: 30px;
+    color: white;
+    font-family: 'Righteous', cursive;
+    font-weight: 100;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.logo-link {
+    text-decoration: none;
+    color: white;
+}
+
+.logo-link:hover {
+    color: #2c8ee3;
+}
+
+.contenedor-logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    width: 60px;
+}
+
+.social-icon .a-derecha {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+/*Menu*/
+.nav-principal {
+    width: 100%;
+    position: relative;
+    padding: 10px;
+    z-index: 2000;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.icon-menu {
+    display: block;
+    color: white;
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.icon-bar {
+    position: relative;
+    top: -3px;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.social-icon [class*="icon-"] {
+    color: black;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+    background: white;
+    border-radius: 50%;
+}
+
+.social-icon_link {
+    text-decoration: none;
+}
+
+.menu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+    transition: height .3s linear;
+}
+
+.menu-link {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.menu-link:hover {
+    background: #a45c5d;
+}
+
+.menu-link_select {
+    background: #a45c5d;
+}
+
+.mostrar {
+    height: 196px;
+}
+
+@media screen and (min-width:1024px) {
+    .icon-menu {
+        display: none;
+    }
+
+    .menu {
+        position: static;
+        display: flex;
+        height: auto;
+        width: auto;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .menu-link {
+        background-color: rgba(0, 0, 0, 0);
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .menu-link_select {
+        background: #a45c5d;
+    }
+}
+
+/*Footer*/
+.footer-principal .contenedor {
+    background-color: #C08081;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 25px 25px 25px 25px;
+}
+
+.footer-principal .columna {
+    flex: 1;
+    text-align: left;
+}
+
+.titulo-columna {
+    font-size: 16px;
+}
+
+.columna-flex-footer .Iconos {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 8px;
+}
+
+.icon-tabler {
+    stroke: white;
+}
+
+.copy {
+    margin: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #C08081;
+    height: 25px;
+    text-align: center;
+}
+
+.imagen-icono-bajo{
+    width: 120px;
+}
+
+/*Boton Whatsapp*/
+
+.btn-wsp 
+{
+    position:fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 35px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index: 4000;
+    transition: all 300ms ease;
+}
+.btn-wsp:hover 
+{
+    text-decoration: none;
+    color: #25D366;
+    background: white;
+}
+
+@media (max-width: 768px) {
+    .titulo-columna {
+        font-size: 10px;
+    }
+    .desc-columna{
+        font-size: 8px;
+    }
+    imagen-icono-bajo{
+        width: 20px;
+    }
+    .columna-flex-footer .Iconos {
+        width: 14px;
+        height: 14px;
+        margin-bottom: 8px;
+    }
+}

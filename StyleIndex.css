@@ -1,0 +1,142 @@
+.banner {
+    position: relative;
+}
+
+.banner:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+    z-index: 1000;
+    top: 0;
+}
+
+.img-banner {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.contenido-banner {
+    width: 90%;
+    color: white;
+    text-align: center;
+    position: absolute;
+    z-index: 1500;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.columna-50 {
+    width: 80%;
+    text-align: center;
+    /* Centra el texto dentro de la columna */
+    margin: 0 auto;
+    /* Centra la columna en el contenedor */
+}
+
+.momentos-texto {
+    width: 80%;
+}
+
+.desc-columna2 {
+    color: rgb(102, 102, 102);
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+    margin: 10px;
+}
+
+.tipos-productos {
+    width: 100%;
+}
+
+.productos-4 {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin: 4% 20px 20px 4%;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 300px;
+}
+
+.destacado-texto {
+    width: 60%;
+    margin: 10% 3% 3% 10%;
+}
+
+.flecha {
+    width: auto;
+    height: 100%;
+}
+
+.productos-4 {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.card-body {
+    background-color: #fbd6d6;
+    color: rgb(102, 102, 102);
+}
+
+.card-text {
+    text-align: justify;
+}
+
+.cuadro-general {
+    display: flex;
+    padding: 30px;
+}
+
+.divisiones {
+    flex: 1;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+    /* Línea vertical entre las columnas */
+    color: rgb(102, 102, 102);
+}
+
+.divisiones:last-child {
+    border-right: none;
+    /* Quita la línea vertical en la última columna */
+}
+
+.grid-carousel {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    text-align: justify;
+    padding: 2% 2% 2% 2%;
+}
+
+.texto-carrousel {
+    margin-left: 20px;
+    margin: 20px;
+}
+
+@media (max-width: 1024px) {
+    .grid-carousel {
+        display: grid;
+        grid-template-columns: 100%;
+        text-align: justify;
+        padding: 2% 2% 2% 2%;
+    }
+
+    .productos-4 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .productos-4 {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+}
